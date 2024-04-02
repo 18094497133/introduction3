@@ -1,0 +1,97 @@
+*{
+    /*初始化*/
+    /* 外边距 */
+    margin:0;
+      /* 填充  */
+    padding:0;
+
+}
+
+.container{
+    animation: animateBg 5s  infinite;
+    /* animation: donghua 5s linear 2s infinite ; */
+}
+
+/* 定义动画 */
+/* 背景缩放动画 */
+@keyframes animateBg{
+    /* 0%,100%{
+       
+        transform: scale(1); 
+        
+    }
+    50%{
+        
+        transform: scale(1.2);
+       
+    } */
+
+
+    0% {
+        background-color: #D27D5B;
+      }
+      50% {
+        background-color: green;
+      }
+      100% {
+        background-color: blue;
+      }
+    /* 0%,50%{
+        transform: scale(1);  
+        background-color: red;
+    }
+    50%{
+        transform: scale(1.1); 
+        background-color: green;
+    } */
+}
+
+/* 流星划过动画 */
+
+@keyframes animate{
+
+    0%{
+        /* 表示元素进行旋转和不进行平移 */
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    90%{
+        /* 不透明 */
+        opacity: 1;
+    }
+    100%{
+        /* 进行旋转和平移 */
+        transform: rotate(315deg) translateX(-1000px);
+        /* 完全透明 */
+        opacity: 0;
+    }
+
+}
+
+@keyframes donghua{
+    0%{
+        background: red;
+     
+    }
+
+    25%{
+        background: yellow;
+        
+    }   
+
+    50%{
+        background: green;
+     
+    }
+    75%{
+        background: black;
+       
+    }
+    100%{
+        background:red;
+       
+    }
+
+
+
+}
